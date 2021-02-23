@@ -11,40 +11,38 @@ import javax.swing.JOptionPane;
  *
  * @author jhonn
  */
+
+//RETORNO DE VALORES//
 public class Operacion {
-    //Atributos
-    int num1;
-    int num2;
-    int sum;
-    int res;
-    int mul;
-    int div;
-    
+   
     //metodos
     
     //Pedir al usuario dos numeros para leer
     //Es void por que no retornara ningun valor
-    public void leerNumeros(){
-        num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite primer numero: "));
-        num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite segundo numero: "));
-    }
+    
     
     //metodos para operaciones
-    public void sumar(int num1, int num2){
-        sum = num1 + num2;
+    //Entre parentesis estan los parametros.. 
+    
+    public int sumar(int num1, int num2){
+        int sum = num1 + num2;
+        return sum;
     }
-    public void restar(int num1, int num2){
-        res = num1 - num2;
+    public int restar(int num1, int num2){
+        int res = num1 - num2;
+        return res;
     }
-    public void multiplicar(int num1, int num2){
-        mul = num1 * num2;
+    public int multiplicar(int num1, int num2){
+        int mul = num1 * num2;
+        return mul;
     }
-    public void dividir(int num1, int num2){
-        div = num1 / num2;
+    public int dividir(int num1, int num2){
+        int div = num1 / num2;
+        return div;
     }
     
     //metodo para imprimir resultados
-    public void resultados(){
+    public void resultados(int sum, int res, int mul, int div){
         System.out.println("La suma de los numeros es " + sum);
         System.out.println("La resta de los numeros es " + res);
         System.out.println("La multiplicacion de los numeros es " + mul);

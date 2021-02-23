@@ -5,18 +5,22 @@
  */
 package ClasesYObjetos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jhonn
  */
 public class main {
     public static void main(String [] args){
+        int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite numero: "));
+        int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite numero: "));
+        
         Operacion op = new Operacion();
-        op.leerNumeros();
-        op.sumar();
-        op.restar();
-        op.multiplicar();
-        op.dividir();
+        op.sumar(n1, n2);
+        op.restar(n1, n2);
+        op.multiplicar(n1, n2);
+        op.dividir(n1, n2);
         op.resultados();
         
     }

@@ -30,16 +30,16 @@ public class Operacion {
     }
     
     //metodos para operaciones
-    public void sumar(){
+    public void sumar(int num1, int num2){
         sum = num1 + num2;
     }
-    public void restar(){
+    public void restar(int num1, int num2){
         res = num1 - num2;
     }
-    public void multiplicar(){
+    public void multiplicar(int num1, int num2){
         mul = num1 * num2;
     }
-    public void dividir(){
+    public void dividir(int num1, int num2){
         div = num1 / num2;
     }
     

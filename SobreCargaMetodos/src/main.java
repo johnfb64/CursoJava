@@ -6,6 +6,10 @@ public class main {
 		Persona p1 = new Persona("John", 38);
 		
 		p1.correr();
+		
+		Persona p2 = new Persona("80");
+		
+		
 	}
 
 }

@@ -8,3 +8,5 @@ Programa de prueba que demuestra:
 import Pack1.Class1;
 
 - Los modificadores de acceso pueden ser public o private. 
+
+- private restringe el atributo para que se utilice solo en la clase que corresponda, no otras clases. 
